@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: calc(100% - 1px);
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    
+}
+nav{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6vw;
+    position:fixed;
+    z-index: 10;
+    background-color: black;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.451);
+    
+    
+}
+.options{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+.options a{
+    font-size: 19px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.567);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1vh 1.9vw;
+    border-left: 1px solid rgba(255, 255, 255, 0.607);
+}
+.card{
+    /* height: inherit; */
+    width: 100%;
+    /* background-color: purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 5%;
+    z-index: 10;
+}
+.cardcontainer{
+    height: 80vh!important;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.795);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 20px; */
+    margin-top: 30px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    
+}
+.cardcontainer h1{
+    font-size: 44px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.cardcontainer p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 30px
+}
+.cardcontainer form{
+height: 300px;
+width: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+gap: 30px;
+margin-top: 2vw;
+}
+.cardcontainer form input{
+width: 400px;
+padding: 10px 30px;
+border: none;
+border-bottom: 2px solid black;
+outline: none;
+background-color: transparent;
+
+}
+.cardcontainer form button{
+   padding: 10px 20px;
+   margin-top: 20px;
+   font-weight: bolder;
+   border-radius: 5px;
+   background-color: rgb(17, 17, 17);
+   border: none;
+   color: white;
+}
+.cardcontainer form button:hover{
+    background-color: rgba(0, 0, 0, 0.693);
+}
